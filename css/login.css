@@ -1,0 +1,289 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: #fff;
+  font-family: Roboto, "Helvetica Neue";
+}
+
+/*================================HEADER================================================*/
+header {
+  width: 90%;
+  margin: 10px auto;
+  padding-bottom: 10px;
+}
+.return_area {
+  width: 86px;
+  float: left;
+}
+
+.return {
+  width: 100%;
+  height: 86px;
+  text-align: center;
+}
+
+.logo_area {
+  width: 84px;
+  margin: 0 auto;
+}
+.logo {
+  width: 100%;
+  height: 71px;
+  text-align: center;
+}
+/* =================================SECTION=================================================*/
+.wrapper {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.object-1 {
+  position: absolute;
+  width: 357px;
+  height: 460px;
+  object-fit: contain;
+  z-index: 1;
+  top: 30%;
+  left: 15%;
+}
+.object-2 {
+  position: absolute;
+  width: 357px;
+  height: 460px;
+  object-fit: contain;
+  z-index: 1;
+  top: -10%;
+  left: 60%;
+}
+/* =================================SIGN-IN BOX============================================*/
+.wrapper .box {
+  position: relative;
+  width: 432px;
+  min-height: 566px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  z-index: 2;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.wrapper .box form {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.wrapper .box form h2 {
+  position: relative;
+  font-family: 'Shrikhand';
+  font-size: 45px;
+  text-transform: uppercase;
+  color: #FA9247; 
+  margin: 40px 0;
+}
+.wrapper .box form .input-box {
+  position: relative;
+  display: grid;
+  grid-template-columns: 9% 91%;
+  margin: 40px 0;
+  border-bottom: 1px solid #C4C4C4;
+}
+.wrapper .box form .input-box.one {
+  margin-top: 100px;
+}
+.wrapper .box form .input-box.two {
+  margin-bottom: 120px;
+}
+.wrapper .box form .input-box img {
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .box form .input-box > div {
+  position: relative;
+  height: 40px;
+}
+.wrapper .box form .input-box > div label {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #C4C4C4;
+  font-size: 18px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.wrapper .box form .input-box > div input {
+  width: 88%;
+  padding: 0 5px;
+  height: 100%;
+  font-size: 18px;
+  border: none;
+  background: none;
+  outline: none;
+  color: #555;
+}
+.wrapper .box form .input-box input:focus ~ label,
+.wrapper .box form .input-box input:valid ~ label {
+  top: 0px;
+  color: #FA9247;
+}
+
+.wrapper .box form .selection-box {
+  margin-bottom: 30px;
+  position: relative;
+  font-size: 18px;
+  color:#C4C4C4;
+}
+.wrapper .box form .selection-box label {
+  position: absolute;
+  left: 0px;
+  top: -30px;
+}
+.wrapper .box form .selection-box select {
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  width: 100%;
+  background: #FFC274;
+  color: white;
+  border: none;
+  text-align: left;
+}
+
+.wrapper .box form input[type="submit"] {
+  position: relative;
+  width: 158px;
+  height: 48px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: #FA9247;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapper .box form input[type="submit"]:hover {
+  background: #ff6b01;
+  top: -3px;
+}
+.wrapper .box form .signup-link {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 18px;
+  color: #C4C4C4;
+}
+.wrapper .box form .signup-link p {
+  margin-top: 5px;
+}
+.wrapper .box form .signup-link a {
+  color: #FA9247;
+  text-decoration: none;
+  font-weight: bold;
+}
+.wrapper .box form .signup-link a:hover {
+  text-decoration: underline;
+}
+.wrapper .box form .message-container .alert {
+  margin: 40px 0;
+  color: #FA9247;
+  text-align: center;
+  font-weight: bold;
+}
+/* =================================FOOTER============================================*/
+footer {
+  position: relative;
+  background-color: #fff;
+  margin: auto;
+  padding-top: 70px;
+  align-items: center;
+}
+footer .footer-row.one{
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  border-bottom: 1px solid #FA9247;/*Drop off when the size of browser changes*/
+}
+footer .footer-row .footer-column {
+  width: 20%;
+  padding: 0 40px;
+}
+footer .footer-row .footer-column.one {
+  width: 30%
+}
+footer .footer-row .footer-column.one h3 {
+  position: relative;
+  font-size: 20px;
+  color: #FA9247;
+}
+footer .footer-row .footer-column.one .logo-company {
+  transform: translateY(-70px);
+  width: 80%;
+}
+footer .footer-row .footer-column h3 {
+  position: relative;
+  font-size: 20px;
+  color: #FA9247;
+  margin-bottom: 30px;
+}
+footer .footer-row .footer-column h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #ff6b01;
+  height: 3px;
+  width: 30px;
+}
+footer .footer-row .footer-column ul {
+  list-style: none;
+}
+footer .footer-row .footer-column ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+footer .footer-row .footer-column ul li a {
+  font-size: 16px;
+  color: #FA9247;
+  text-decoration: none;
+  display: block;
+  transition: all 0.5s;
+}
+footer .footer-row .footer-column ul li a:hover {
+  color: #ff6b01;
+  padding-left: 5px;
+  font-weight: bold;
+}
+footer .footer-row .footer-column .social-icons a{
+  display: inline-block;
+  margin: 0 10px;
+} 
+footer .footer-row .footer-column .social-icons img {
+  width: 40px;
+  transition: all 0.5s;
+}
+
+footer .footer-row .footer-column .social-icons img:hover {
+  transform: scale(1.2);
+}
+
+footer .footer-row.two p{
+  text-align: center;
+  color: #FA9247;
+}
